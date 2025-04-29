@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin in html</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .boxes {
+        border: 2px solid green;
+        height: 50%;
+        width: 50%;
+        display: flex;
+        gap: 2px 6px;
+        padding: 12px;
+      }
+      .box1,
+      .box2 {
+        width: 40vw;
+        border: 2px solid hotpink;
+        height: 40vh;
+        padding: 12px;
+        margin: 12px;
+        background-image: url(/media/flower.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: blue;
+      }
+      .box2{
+        background-image: url(/media/flower.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        tenetur debitis saepe porro inventore! Voluptatum ratione, eos maxime
+        quos consectetur praesentium officia rerum sint inventore iste dolorum,
+        tempora voluptate nobis.
+        
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        voluptatum iure, numquam error ipsam molestias nam sit provident
+        consequuntur saepe quasi nihil neque omnis fuga vel quae itaque et
+        voluptas.
+        
+      </div>
+    </div>
+  </body>
+</html>

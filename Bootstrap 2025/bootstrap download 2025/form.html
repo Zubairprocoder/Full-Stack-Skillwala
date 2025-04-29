@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in html</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    body{
+        overflow-x: hidden;
+    }
+  </style>
+  <body>
+    <form action="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-success text-center p-1">form in class</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="username">First Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="Lastname">Last Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="Lastname"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <label for="dob">Dob</label>
+            <input class="form-control" type="date" name="" id="dob" />
+          </div>
+          <div class="col-md-6">
+            <label for="Language">Language</label>
+            <select name="" id="Language" class="form-control">
+              <option selected>Open this select menu</option>
+              <option value="">html</option>
+              <option value="">CSS</option>
+              <option value="">Javascript</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-check">
+              <label for="check">check</label>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                class="form-check-input"
+              />
+            </div>
+            <div class="form-check">
+              <label for="radio">radio</label>
+              <input type="radio" name="" id="radio" class="form-check-input" />
+            </div>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 m-auto">
+          <button class="btn btn-success mt-sm-5 form-control" type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</html>

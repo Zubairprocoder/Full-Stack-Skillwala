@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class</title>
+    <style>
+      .box {
+        background-color: blue;
+        width: 95vw;
+        margin: auto;
+        height: 50vh;
+        box-sizing: border-box;
+        box-shadow: 6px 8px 12px green;
+        border-radius: 12px;
+      }
+      .box:hover {
+        background-color: hotpink;
+      }
+
+      /* ul li:first-child:hover {
+        color: hotpink;
+      }
+       */
+      ul li:nth-last-child(3) {
+        background-color: aqua;
+      }
+      ol li:nth-child(odd){
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <ul>
+      <li>html</li>
+      <li>CSS</li>
+      <li>javascript</li>
+      <li>react js</li>
+      <li>tailwind css</li>
+    </ul>
+    <ol>
+      <li>html</li>
+      <li>CSS</li>
+      <li>javascript</li>
+      <li>react js</li>
+      <li>tailwind css</li>
+    </ol>
+  </body>
+</html>

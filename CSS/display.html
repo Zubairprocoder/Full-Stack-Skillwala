@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display in class</title>
+    <style>
+      p,
+      div {
+        border: 3px solid green;
+        padding: 12px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+      }
+      span {
+        border: 3px solid hotpink;
+        padding: 12px;
+        box-sizing: border-box;
+      }
+      h1 {
+        color: blue;
+        background-color: hotpink;
+        padding: 12px;
+        border-radius: 48px;
+        text-align: center;
+      }
+      .f {
+        color: blue;
+        border: none;
+      }
+      .images {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        box-sizing: border-box;
+        margin: 20px;
+        border: none;
+      }
+
+      .fronted {
+        width: 100%;
+      }
+      h3 {
+        color: violet;
+        display: none;
+      }
+      h4 {
+        color: green;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Zubair <span class="f"> Freelancer </span> ❤💚🧡</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate
+      fuga dolorem est ullam doloribus corporis quo in! Officiis itaque ducimus
+      pariatur reiciendis repellendus explicabo iusto odio sunt iste aliquid.
+    </p>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia debitis
+      eum minima quae amet quasi fuga maxime architecto. In ratione debitis
+      quasi atque voluptatum aspernatur aliquam ipsa commodi nobis expedita!
+    </div>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptates
+      architecto?</span
+    >
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+    <h3>
+      Zubair is a good programmer.I am fronted developer with Ai developer.
+    </h3>
+    <h4>
+      I am learn with html css js bootsrap tailwind css react js figma and git
+      or github.
+    </h4>
+    <div class="images">
+      <img src="/media/bg.png" alt="bg" />
+      <img src="/media/flower.png" alt="flower" />
+      <img class="fronted" src="/media/fronted.png" alt="fronted" />
+    </div>
+  </body>
+</html>

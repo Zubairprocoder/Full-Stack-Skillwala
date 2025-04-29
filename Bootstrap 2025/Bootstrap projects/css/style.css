@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgb(33, 37, 41);
+}
+.top-section {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  padding: 100px 0;
+}
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.features i {
+  font-size: 3rem;
+  color: #4e54c8;
+}
+.card:hover,
+.bi:hover,
+.btn:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+#review footer {
+  background-color: #2a2a2a;
+  color: rgb(189, 189, 189);
+  padding: 23px 0;
+}
+.enroll {
+  background-color: #f0f8ff;
+}
+.join-section {
+  background-color: #fff3cd;
+  padding: 40px 0;
+}
+.join-section h2 {
+  font-weight: bold;
+}
+.join-section .btn {
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+}
+.join-section .btn:hover {
+  background-color: #3a3fc8;
+}
+.bi {
+  font-size: 1.5rem;
+  color: rgba(245, 243, 243, 0.945);
+  cursor: pointer;
+}
+.card {
+  cursor: pointer;
+}
+#floatingTextarea {
+  height: 130px;
+  resize: none;
+}
+
+/* For Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Optional: Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(14, 207, 14, 0.849);
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(156, 8, 82, 1),
+    rgba(6, 6, 194, 1),
+    rgba(6, 167, 6, 1)
+  );
+}

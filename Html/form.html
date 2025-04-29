@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in Html</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <label for="username">Full Name</label>
+      <input
+        type="text"
+        id="username"
+        name="fname"
+        required
+        placeholder="What is your username"
+      />
+      <br />
+      <br />
+      <label for="comment">Your Comment</label>
+      <br />
+      <br />
+      <textarea
+        name="comment"
+        id="comment"
+        name="address"
+        placeholder="Your comment here"
+        width="500"
+        minlength="10"
+        required
+      ></textarea>
+      <br />
+      <br />
+      <label for="">Your date</label>
+      <input type="date" name="dob" id="" />
+      <br />
+      <br />
+      <label for="">Your password</label>
+      <input
+        type="password"
+        name="pass"
+        placeholder="What is your password here"
+        id=""
+      />
+      <br />
+      <br />
+      <input type="email" name="useremail" placeholder="What is Your Email" id="" />
+      <br />
+      <br />
+      <label for="">number</label>
+      <input type="number" name="" id="" placeholder="What is Your number" />
+      <br />
+      <br />
+      <label for="">Age</label>
+      <input type="number" min="18" max="60" name="userage" id="" placeholder="Age" />
+      <br />
+      <br />
+      <label for="">Gender</label>
+      <input type="radio" name="Gender" id="Male"  value="Male"/><label for="Male"
+        >Male</label
+      >
+      <input type="radio" name="Gender" id="Female" value="Female" /><label for="Female"
+        >Female</label
+      >
+      <input type="radio" name="Gender" id="Other" value="Other" /><label for="Other"
+        >Other
+      </label>
+      <br />
+      <br />
+      <label for="">Subject</label>
+      <input type="checkbox" name="S1" value="html" id="html" checked /><label for="html"
+        >Html</label
+      >
+      <input type="checkbox" name="S1" value="CSS" id="CSS" /><label for="CSS">CSS</label>
+      <input type="checkbox" name="S1" value="Javascript" id="Javascript" /><label for="Javascript"
+        >Javascript</label
+      >
+      <br />
+      <br />
+      <select name="options" id="">
+        <option value="Html">Html</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+      </select>
+      <br />
+      <br />
+      <input type="file" name="doc" id="">
+      <br />
+      <br />
+      <input type="search" name="usersearch" id="">
+      <label for="">Search</label>
+      <br />
+      <br />
+      <input type="reset" value="reset" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

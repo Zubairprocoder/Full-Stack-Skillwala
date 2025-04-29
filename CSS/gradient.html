@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient in html</title>
+    <style>
+      /* body {
+        background-image: linear-gradient(to bottom, blue, red, hotpink, green);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      } */
+      body {
+        background-image: linear-gradient(
+          0deg,
+          rgb(34, 195, 82) 0%,
+          rgb(22, 9, 136) 18%,
+          rgba(226, 18, 146, 0.63) 100%
+        );
+      }
+      html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box1 {
+        width: 100%;
+        height: 20vh;
+        /* background-color: hotpink; */
+        background-image: linear-gradient(to bottom, blue, red, hotpink, green);
+        margin-bottom: 12px;
+      }
+      .box2 {
+        width: 100%;
+        height: 20vh;
+        /* background-color: hotpink; */
+        background-image: radial-gradient(blue, red, hotpink, green);
+        margin-bottom: 12px;
+      }
+      .box3 {
+        width: 20vw;
+        height: 40vh;
+        /* background-color: hotpink; */
+        background-image: conic-gradient(blue, red, hotpink, green);
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div> -->
+  </body>
+</html>
