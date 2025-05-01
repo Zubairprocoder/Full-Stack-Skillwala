@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in javascript</title>
+  </head>
+  <body>
+    <h2>Zubair fronted developer</h2>
+  </body>
+  <script>
+    let create = document.createElement("h1");
+    create.setAttribute("id","heading")
+    let content = document.createTextNode("Zubair is a programmer 🥰");
+    create.appendChild(content);
+    console.log(create);
+    document.body.appendChild(create);
+  </script>
+</html>

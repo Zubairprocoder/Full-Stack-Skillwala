@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom in javascript</title>
+  </head>
+  <body>
+    <h1 id="color">Zubair freelancer</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat quia
+      libero officiis blanditiis iste sint vitae modi dolore molestias! Vel
+      quisquam voluptatum rem repudiandae, ipsa quas. Et, voluptate maxime!
+    </p>
+    <h3>Hello World 😀</h3>
+    <a id="link" href="https://youtube.com/" target="_blank">Youtube</a>
+    <p id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat,
+      accusamus ipsam officiis assumenda, optio ipsum modi non ipsa repellendus
+      facilis molestiae placeat cupiditate. Modi odio illo eius delectus!
+      Assumenda!
+      <span>Lorem ipsum dolor sit amet consectetur.</span>
+    </p>
+    <ul id="ul1">
+      <li>Html</li>
+      <li>CSS</li>
+      <li>javascript</li>
+      <li>Tailwind CSS</li>
+      <li>React js</li>
+    </ul>
+
+    <script>
+      //   console.log(document);
+      //   let style = document.getElementById("color").style;
+      //   console.log(style);
+      //   let id = (document.getElementById("color").style.color = "green");
+      //   console.log(id);
+      //   let b = (document.querySelector("#link").attributes[1].value =
+      //     "https://www.facebook.com/");
+      //   console.log(b);
+      let p1 = document.getElementById("p1").innerHTML;
+      console.log(p1);
+      let ul1 = document.getElementById("ul1").innerText;
+      console.log(ul1);
+    </script>
+  </body>
+</html>

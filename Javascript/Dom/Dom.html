@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom in javascript</title>
+    <style>
+      h1,
+      h2 ,p{
+        text-align: center;
+      }
+      h1 {
+        color: rgba(226, 16, 121, 0.849);
+      }
+      h2 {
+        color: rgba(14, 34, 218, 0.911);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Dom  - Document Object Model -->
+    <h1 id="heading1">Zubair freelancer</h1>
+    <h2 class="p1">Dom in javascript</h2>
+    <p></p>
+  </body>
+  <script>
+    // console.log(document);
+    // id class querselector querselectorAll tagname
+    // let heading = document.getElementById("heading1").innerText = "Zubair programmer";
+    // console.log(heading);
+    // let p1 = document.getElementsByClassName("p1")[0].innerText = "fronted developer";
+    // console.log(p1);
+    let taguser = (document.getElementsByTagName("p")[0].innerText =
+      "yar khuch kro bhai");
+    console.log(taguser);
+  </script>
+</html>
