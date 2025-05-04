@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event in Javascript</title>
+    <style>
+      button {
+        background-color: hotpink;
+        border-radius: 12px;
+        padding: 12px 34px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn" onclick="changeColor()">Color</button>
+    <select name="" id="options" onclick="changeValue()">
+      <option value="car">Car</option>
+      <option value="Bus">Bus</option>
+      <option value="Bike">Bike</option>
+      <option value="fourture">fourture</option>
+    </select>
+
+    <h2 id="value"></h2>
+    <textarea name="" id="" onselect="selectvalue()">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa esse officia iusto obcaecati nisi assumenda in dolorum totam enim dignissimos corporis voluptatum excepturi quibusdam, autem suscipit quos? Optio, maiores?</textarea
+    >
+    <p id="msg"></p>
+    <script>
+      function changeColor() {
+        document.getElementById("btn").style.backgroundColor = "green";
+      }
+      function changeValue() {
+        let a = document.getElementById("options").value;
+        document.getElementById("value").innerText =
+          "your selected value - " + a;
+      }
+      function selectvalue() {
+        document.getElementById("msg").innerText = "Text Selected";
+      }
+    </script>
+  </body>
+</html>

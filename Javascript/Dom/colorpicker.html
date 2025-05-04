@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <!-- Font Awesome CDN (Latest version via jsDelivr) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        padding: 6px;
+      }
+      #toggle {
+        font-size: 34px;
+        position: absolute;
+        top: 6px;
+        left: 90%;
+        cursor: pointer;
+      }
+      .pass {
+        border: 2px solid hotpink;
+        width: 25vw;
+        border-radius: 5px;
+        padding: 6px;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: 21vw;
+      }
+      #eye {
+        font-size: 21px;
+      }
+      input:placeholder-shown {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="color" name="" id="color" onchange="colorpicker()" />
+
+    <i class="fa-solid fa-toggle-on" onclick="darkmode()" id="toggle"></i>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio deleniti
+      maiores praesentium voluptate nulla nam, sint quaerat adipisci, tempora
+      debitis facere ratione fugit provident laboriosam aut suscipit eligendi
+      nobis quod quas. Ducimus, ad a consequuntur suscipit magni, officiis
+      tenetur temporibus illo tempora esse id non quos. Corrupti pariatur
+      voluptatem quaerat?
+    </p>
+    <div class="pass">
+      <input type="password" name="" id="password" placeholder="Password" />
+      <i class="fa-solid fa-eye" id="eye" onclick="password()"></i>
+    </div>
+    <script>
+      function colorpicker() {
+        let color = document.getElementById("color").value;
+        document.body.style.backgroundColor = color;
+      }
+      function darkmode() {
+        let bgColor = document.body.style.backgroundColor;
+        if (bgColor === "" || bgColor === "white") {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("toggle").attributes[0].value =
+            "fa-solid fa-toggle-on";
+        } else {
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          document.getElementById("toggle").attributes[0].value =
+            "fa-solid fa-toggle-off";
+        }
+      }
+      function password() {
+        let password = document.getElementById("password");
+        if (password.type === "password") {
+          password.type = "text";
+          document.getElementById("eye").attributes[0].value =
+            "fa-solid fa-eye";
+        } else {
+          password.type = "password";
+          document.getElementById("eye").attributes[0].value =
+            "fa-solid fa-eye-slash";
+        }
+      }
+    </script>
+  </body>
+</html>

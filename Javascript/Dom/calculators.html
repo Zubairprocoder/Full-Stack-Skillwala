@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table in html</title>
+  </head>
+  <body>
+    <table border="1" align="center">
+      <tr>
+        <th>
+          <input type="text" id="display" />
+        </th>
+      </tr>
+      <tr>
+        <td align="center">
+          <input type="button" value="1" onclick="handvalue('1')" />
+          <input type="button" value="2" onclick="handvalue('2')" />
+          <input type="button" value="3" onclick="handvalue('3')" />
+          <input type="button" value="+" onclick="handvalue('+')" />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input type="button" value="4" onclick="handvalue('4')" />
+          <input type="button" value="5" onclick="handvalue('5')" />
+          <input type="button" value="6" onclick="handvalue('6')" />
+          <input type="button" value="-" onclick="handvalue('-')" />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input type="button" value="7" onclick="handvalue('7')" />
+          <input type="button" value="8" onclick="handvalue('8')" />
+          <input type="button" value="9" onclick="handvalue('9')" />
+          <input type="button" value="*" onclick="handvalue('*')" />
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input type="button" value="C" onclick="handClear()" />
+          <input type="button" value="0" onclick="handvalue('0')" />
+          <input type="button" value="=" onclick="handCalculators()" />
+          <input type="button" value="/" onclick="handvalue('/')" />
+          <input type="button" value="❌" onclick="handleonevalue()" />
+        </td>
+      </tr>
+    </table>
+    <script>
+      let display = document.getElementById("display");
+      function handvalue(btn) {
+        display.value += btn;
+      }
+      function handCalculators() {
+        display.value = eval(display.value);
+      }
+      function handClear() {
+        display.value = "";
+      }
+      function handleonevalue() {
+        display.value = display.value.slice(0, -1);
+      }
+    </script>
+  </body>
+</html>
