@@ -4,14 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
+    <style>
+      button {
+        border: none;
+        border-radius: 100%;
+        background-color: hotpink;
+        padding: 23px;
+        font-size: 34px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <button id="btn">Zubair freelancer</button>
-
+    <!-- <button id="btn">Zubair freelancer</button> -->
+    <button id="btn">🥰</button>
     <script>
-      document.getElementById("btn").addEventListener("click", () => {
-        document.getElementById("btn").innerText = "fronted Developer";
+      // document.getElementById("btn").addEventListener("click", () => {
+      //   document.getElementById("btn").innerText = "fronted Developer";
+      // });
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        btn.style.backgroundColor = "green";
       });
+      btn.addEventListener("mouseenter",()=>{
+        btn.innerText = "😛"
+      })
+      btn.addEventListener("mouseleave",()=>{
+        btn.innerText = "🤣"
+      })
+      console.log(this)
     </script>
   </body>
 </html>
