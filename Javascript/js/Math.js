@@ -22,3 +22,7 @@ let num = 12.8;
 
 // ceil
 console.log(Math.ceil(num));
+
+let addvalue = require("../Module/fun_1.js");
+let { add } = addvalue;
+add(12, 43);
