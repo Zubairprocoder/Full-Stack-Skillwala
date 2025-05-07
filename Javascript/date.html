@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date in js</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: hotpink;
+      background: linear-gradient("blue", "green", "hotpink");
+    }
+  </style>
+  <body>
+    <h1 id="Time"></h1>
+    <script>
+      setInterval(() => {
+        let today = new Date();
+        //   console.log(today);
+        // DD/MM/YY
+        let todaydate = today.getDate();
+        let month = [
+          "jan",
+          "feb",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov]",
+          "dec",
+        ];
+        let todaymonth = today.getMonth();
+        let todayYear = today.getFullYear();
+        let todayTime = today.getTime();
+        let todayHours = today.getHours();
+        let todayMint = today.getMinutes();
+        let todaySec = today.getSeconds();
+        let todayMilisec = today.getMilliseconds();
+        //   console.log(todaydate);
+        // console.log(month[todaymonth]);
+        console.log(month[todaymonth]);
+        //   console.log(todayYear);
+        //   console.log(todayTime);
+        //   console.log(todayHours);
+        //   console.log(todayMint);
+        console.log(todayMilisec);
+        console.log(
+          `${todaydate}/${todaymonth}/${todayYear} Time: ${todayHours}:${todayMint}:${todaySec}:${todayMilisec} `
+        );
+        let Time = `${todaydate}/${todaymonth}/${todayYear} Time: ${todayHours}:${todayMint}:${todaySec} `;
+        document.getElementById("Time").innerText = Time;
+      }, 1000);
+    </script>
+  </body>
+</html>
