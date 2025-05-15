@@ -62,3 +62,6 @@
 //   Age: 23,
 //   Address: "Karachi",
 // }
+
+let isfetch = fetch("https://dummyjson.com/products");
+console.log(isfetch);

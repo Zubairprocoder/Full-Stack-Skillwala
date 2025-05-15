@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch in js</title>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <img src="" alt="" id="pimg" />
+    <p id="description"></p>
+    <p id="price"></p>
+    <p id="category"></p>
+    <p id="rating"></p>
+    <p id="stock"></p>
+    <p id="brand"></p>
+    <p id="discountPercentage"></p>
+  </body>
+  <script>
+    // fetch("https://dummyjson.com/products")
+    //   .then((res) => {
+    //     return res.json();
+    //   })
+    //   .then((data) => {
+    //     const title = data.products[0].title;
+    //     const pimages = data.products[0].images[0];
+    //     document.getElementById("title").innerHTML = title;
+    //     document.getElementById("pimg").src = pimages;
+    //     document.getElementById("description").innerHTML =
+    //       data.products[0].description;
+    //     document.getElementById("price").innerHTML =
+    //       "Price: " + data.products[0].price;
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+
+    async function data() {
+      try {
+        const response = await fetch("https://dummyjson.com/products");
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    data();
+  </script>
+</html>
